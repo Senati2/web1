@@ -1,0 +1,327 @@
+/* Estilos generales */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: TilNeon-Regular;
+    background-image: url(/img/textura.jpg);
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Estilos CSS para centrar imágenes */
+section img {
+    display: block;
+    margin: 0 auto;
+}
+
+.aside-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el menú principal */
+#main-menu {
+    float: none;
+    width: 100%;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+#main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 15px;
+}
+
+#main-menu>ul>li {
+    float: left;
+    margin: 0;
+}
+
+#main-menu>ul>li>a {
+    display: block;
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#main-menu>ul>li>a:hover {
+    background-color: #444;
+}
+
+#main-menu>ul>li>ul {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    border-top: 3px solid #ffcc00;
+}
+
+#main-menu>ul>li:hover>ul {
+    display: block;
+}
+
+#main-menu>ul>li>ul>li {
+    float: none;
+}
+
+#main-menu>ul>li>ul>li>a {
+    padding: 10px 20px;
+    color: #fff;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+#main-menu>ul>li>ul>li>a:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 800px) {
+    #main-menu>ul>li {
+        float: none;
+        width: 100%;
+        border-bottom: 1px solid #444;
+    }
+
+    #main-menu>ul>li>a {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    #main-menu>ul>li>ul {
+        position: static;
+        display: none;
+        background-color: transparent;
+        border: none;
+    }
+
+    #main-menu>ul>li>ul>li>a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #main-menu>ul>li:hover>ul {
+        display: block;
+    }
+}
+
+/* Estilos para el header */
+header {
+    float: left;
+    width: 100%;
+    font-family: TilNeon-Regular;
+    text-align: center;
+    margin: 20px 0;
+    background-color: floralwhite;
+    padding-left: 10px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 140px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 45px;
+    color: var(--colorPrimari-oscuro);
+    text-shadow: 3px 4px 6px var(--colorSecundari-claro);
+}
+
+.color2 {
+    color: var(--colornegro-oscuro);
+}
+
+@media screen and (max-width:800px) {
+    header {
+        text-align: center;
+    }
+}
+
+/* Estilos para el aside */
+aside {
+    background-color: var(--colorPrimari-claro);
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px var(--colorPrimari-claro);
+}
+
+aside h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--colorPrimari-oscuro);
+    background-color: var(--colorPrimari-claro);
+    margin-top: 0;
+}
+
+aside article {
+    margin-bottom: 60px;
+}
+
+aside article form input[type="submit"] {
+    background-color: bisque;
+    width: 100%;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+aside article form input[type="email"],
+aside article form input[type="password"] {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+aside article form input[type="submit"]:hover {
+    background-color: var(--colorPrimari-claro);
+    cursor: pointer;
+}
+
+aside ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+aside ul li a {
+    color: var(--colorPrimari-claro);
+}
+
+aside ul li a:hover {
+    color: cadetblue;
+}
+
+aside blockquote {
+    margin: 0;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+/* Estilos para el footer */
+footer {
+    float: left;
+    width: 100%;
+    background-color: var(--colorSecundari-claro);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: slategrey;
+    font-size: 14px;
+}
+
+footer a {
+    color: antiquewhite;
+}
+
+footer a:hover {
+    color: pink;
+}
+
+footer div {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el contenedor de vídeo */
+.video-container {
+    border: 5px solid #8B4513;
+    border-radius: 15px;
+    background-color: #F5DEB3;
+}
+
+/* Estilos para el contenido */
+#contenido {
+    float: left;
+    margin-top: 30px;
+    margin-left: 1px;
+    padding: 10px;
+    width: calc(100% - 30px);
+}
+
+#contenido h1 {
+    margin: 10px auto;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-shadow: 3px 3px 4px #9e6161;
+    background-color: bisque;
+    text-align: center;
+}
+
+#contenido section {
+    background-color: rgb(236, 232, 191);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 3px 4px 5px #ddd;
+}
+
+#contenido section h2 {
+    margin: 0 auto;
+    color: var(--colorPrimari-claro);
+    font-weight: bold;
+    text-align: center;
+}
+
+#contenido>section>a {
+    display: block;
+    margin: 0 auto 20px;
+    color: tomato;
+    text-align: center;
+}
+
+/* Estilos para el paginado */
+.paginado {
+    float: right;
+}
+
+.paginado>li {
+    display: inline-block;
+}
+
+.paginado>li>a {
+    padding: 5px;
+    background-color: cyan;
+    color: white;
+    border-radius: 5px;
+}
+
+.paginado>li>a:hover {
+    color: gold;
+    background-color: green;
+}
+
+@media screen and (max-width:800px) {
+    #contenido {
+        width: 100%;
+    }
+}
+
+#contenido>section:nth-child(1) {
+    margin-top: 30px;
+}

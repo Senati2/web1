@@ -1,34 +1,120 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>entregable</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregable</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="fonts.css">
 </head>
-
 <body>
     <div class="contenedor">
-        <div include-html="./partials/header.html"></div>
-        <hr> <!-- Línea horizontal para separar las secciones -->
-        <div include-html="./partials/menuPrincipal.html"></div>
-        <div include-html="./partials/contenedor.html"></div>
-        <div include-html="./partials/aside.html"></div>
-        <hr> <!-- Línea horizontal para separar las secciones -->
-        <div include-html="./partials/footer.html"></div>
-    </div>
-    <script src="js/include-html.js"></script>
-</body>
+        <header>
+            <img src="img/LOGO2.png" alt="Logo del sitio web">
+            <h1>Ganadores de <span class="color2">Balones de Oro</span></h1>
+        </header>
+        <nav id="main-menu" class="menu-container">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Clubes</a>
+                    <ul>
+                        <li><a href="#">Jugadores</a>
+                            <ul>
+                                <li><a href="#">Lionel Messi</a></li>
+                                <li><a href="#">Cristiano Ronaldo</a></li>
+                                <li><a href="#">Michel Platini</a></li>
+                                <li><a href="#">Johan Cruyff</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Posición</a>
+                            <ul>
+                                <li><a href="#">Delantero</a></li>
+                                <li><a href="#">Extremo izquierdo</a></li>
+                                <li><a href="#">Centrocampista</a></li>
+                                <li><a href="#">Delantero / Centrocampista</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nacionalidad</a>
+                            <ul>
+                                <li><a href="#">Argentina</a></li>
+                                <li><a href="#">Portugal</a></li>
+                                <li><a href="#">Francia</a></li>
+                                <li><a href="#">Países Bajos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Biografía</a></li>
+                <li><a href="#">Títulos</a></li>
+                <li><a href="#">Mundiales</a></li>
+            </ul>
+        </nav>
+        <main id="contenido">
+            <h1>Ganadores Principales</h1>
+            <section>
+                <h2>Lionel Messi</h2>
+                <p>Lionel Andrés Messi Cuccittini (Rosario, 24 de junio de 1987), conocido como Leo Messi, es un futbolista argentino que juega como delantero o centrocampista. Desde 2023, integra el plantel del Inter Miami de la MLS canadoestadounidense. Es también internacional con la selección de Argentina, de la que es capitán.
 
+                    Con el Fútbol Club Barcelona, al que estuvo ligado más de veinte años, ganó 35 títulos, entre ellos, diez de La Liga, cuatro de la Liga de Campeones de la UEFA y siete de la Copa del Rey.
+
+                    Considerado con frecuencia el mejor jugador del mundo y uno de los mejores de todos los tiempos, es el único en la historia que ha ganado, entre otras distinciones, ocho veces el Balón de Oro, ocho premios de la FIFA al mejor jugador del mundo, seis Botas de Oro y dos Balones de Oro de la Copa Mundial de Fútbol. En 2020, se convirtió en el primer futbolista y el primer argentino en recibir un premio Laureus y fue incluido en el Dream Team del Balón de Oro.</p>
+                <a href="https://es.wikipedia.org/wiki/Lionel_Messi">ver más...</a>
+                <img src="img/messi.jpg" alt="messi">
+            </section>
+            <section>
+                <h2>Cristiano Ronaldo</h2>
+                <p>Cristiano Ronaldo dos Santos Aveiro (Funchal, Madeira; 5 de febrero de 1985), es un futbolista portugués. Juega como extremo izquierdo o delantero y su equipo actual es el Al-Nassr F. C. de la Liga Profesional Saudí. Es internacional absoluto con la selección de Portugal, de la cual es capitán, máximo goleador histórico y jugador con más presencias con 206 partidos, logro alcanzado en las eliminatorias para la Eurocopa 2024, reconocido por el Libro Guinness de los récords.
+
+                    Considerado con frecuencia el mejor y más completo futbolista, así como el mayor goleador del mundo, además de uno de los mejores de todos los tiempos</p>
+                <a href="https://es.wikipedia.org/wiki/Cristiano_Ronaldo">ver más...</a>
+                <img src="img/ronaldo.jpg" alt="ronaldo">
+            </section>
+            <section>
+                <h2>Michel Platini</h2>
+                <p>(Joeuf, 1955) Futbolista francés. Sin duda el jugador más carismático de la historia del fútbol galo, fue capitán y alma de la selección de su país durante la década de los ochenta. Inició su carrera profesional en el Nancy, equipo con el que fue campeón de Copa en la temporada 1977-78. En aquel momento Platini era ya descrito como un futbolista de enorme calidad y los especialistas le predecían un espléndido futuro profesional; de hecho, en 1977 contaba ya con el Balón de Bronce europeo.</p>
+                <a href="https://www.biografiasyvidas.com/biografia/p/platini.htm">ver más...</a>
+                <img src="img/2.jpg" alt="Michel">
+            </section>
+            <section>
+                <h2>Johan Cruyff</h2>
+                <p>(Amsterdam, 1947 - Barcelona, 2016) Jugador y entrenador de fútbol holandés. Hijo de una familia de modesta situación económica, a los diez años ingresó en el Ajax de Amsterdam, club en el cual permanecería hasta 1973 y con el que obtendría seis títulos de Liga y tres copas de Europa. Entre 1973 y 1978 jugó en el F. C. Barcelona, con el cual consiguió el Campeonato de Liga de 1974. Durante dichos años fue nombrado mejor futbolista europeo en tres ocasiones (1971, 1973 y 1974) y en 1974 fue designado mejor jugador del Mundial disputado aquel año. Tras su paso por el F. C. Barcelona recaló brevemente en la liga estadounidense y luego en el Levante español, para incorporarse de nuevo al Ajax como jugador, poco antes de retirarse de la práctica deportiva. Su posterior faceta de entrenador, que inició en el Ajax, estaría tan plagada de éxitos como la de jugador. Destacó sobre todo por su talante ofensivo y logró sus mayores victorias con el F. C. Barcelona, club al que entrenó entre 1988 y 1996. Durante dichos años logró cuatro ligas consecutivas (1991, 1992, 1993 y 1994) y una copa de Europa (1992). En 1998 creó la Universidad Johan Cruyff, que imparte estudios para la administración y gestión de entidades deportivas. En 1999 fue homenajeado en Barcelona y Amsterdam y fue nombrado asesor de la UEFA.</p>
+                <a href="https://www.biografiasyvidas.com/biografia/c/cruyff.htm">ver más...</a>
+                <img src="img/1.jpg" alt="johan">
+            </section>
+        </main>
+        <aside>
+            <h1>Recibe noticias sobre fútbol</h1>
+            <article>
+                <h3>Iniciar Sesión</h3>
+                <form action="">
+                    <input type="email" name="correo" placeholder="Ingresa tu correo">
+                    <input type="password" name="contraseña" placeholder="Ingresa tu contraseña">
+                    <input type="submit" value="Ingresar">
+                </form>
+            </article>
+            <article>
+                <h3>Enlaces de Interés</h3>
+                <ul>
+                    <li><a href="https://es.wikipedia.org/wiki/Premier_League">Premier League</a></li>
+                    <li><a href="https://es.uefa.com/nationalassociations/leaguesandcups/">Ligas Europeas</a></li>
+                    <li><a href="https://conmebollibertadores.com/">Copa Conmebol</a></li>
+                    <li><a href="https://www.concacaf.com/es/">Concacaf</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Lo Último</h3>
+                <blockquote>10:07 EN VIVO: El Aston Villa de Emery salva el honor de la Premier en una semana de pesadilla en Europa</blockquote>
+            </article>
+        </aside>
+    </div>
+    <footer>
+        <div>
+            <a href="#">&copy; Reporte de Balones de Oro</a>
+        </div>
+        <div>
+            Estadísticas: Visita el sitio en <a href="https://www.dazn.com/es-ES/news/f%C3%BAtbol/balon-de-oro-lista-de-ganadores-y-palmares-del-premio-al-mejor-futbolista-del-mundo-de-france-football/yk3dalhzw9tu133fh8hrsrolu">mi página</a>
+        </div>
+    </footer>
+</body>
 </html>
 
-<aside id="menu-principal">
-    <!-- Contenido del menú principal -->
-</aside>
-
-<div class="video-container">
-    <!-- Contenido del contenedor de video -->
-</div>
