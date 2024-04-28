@@ -1,0 +1,10 @@
+/*fuentes*/
+@font-face {
+    font-family: Honk-Regular;
+    src: url(/fonts/Honk-Regular.ttf);
+
+}
+@font-face {
+    font-family: TilNeon-Regular;
+    src: url(/fonts/TiltNeon-Regular.ttf);
+}

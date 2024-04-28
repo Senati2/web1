@@ -1,0 +1,20 @@
+@import url(fonts.css);
+@import url(colores.css);
+@import url(header.css);
+@import url(menuprincipal.css);
+@import url(contenido.css);
+@import url(aside.css);
+@import url(footer.css);
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: TilNeon-Regular;
+    background-image: url(/img/textura.jpg);
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: auto;
+}

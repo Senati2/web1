@@ -1,0 +1,102 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-menu {
+    float: left;
+    width: 100%;
+    background-color: slategrey;
+    box-shadow: 5px 8px 3px var(--colorPrimari-claro);
+    text-transform: uppercase;
+}
+
+#main-menu>ul>li {
+    float: left;
+    margin: 10px 0px;
+
+}
+
+#main-menu>ul>li>a {
+    color: aliceblue;
+    padding: 10px 20px;
+    border-right: solid 1px var(--colorPrimari-claro);
+    font-size: 17px;
+}
+
+#main-menu ul li:hover>ul {
+    display: block;
+}
+
+#main-menu>ul>li>ul {
+    display: none;
+    position: absolute;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorPrimari-oscuro);
+}
+
+a:hover {
+    color: white;
+
+}
+
+/*mostrar submenu*/
+#main-menu>ul>li>ul {
+    display: none;
+    position: absolute;
+    margin-top: 12px;
+}
+
+#main-menu>ul>li>a:hover {
+    background-color: var(--colorPrimari-claro);
+}
+
+#main-menu>ul>li:hover>ul {
+    display: block;
+}
+
+#main-menu>ul>li>ul>li>a {
+    display: block;
+    padding: 10px;
+    background-color: var(--colorSecundari-claro);
+    color: aqua;
+    font-size: 15px;
+    border-top: solid 1px;
+    border-radius: 5px;
+}
+
+#main-menu>ul>li>ul>li>a:hover {
+    background-color: var(--colorPrimari-oscuro);
+}
+
+/*meida query*/
+@media screen and (max-width:800px) {
+    #main-menu>ul>li {
+        /*display:none;*/
+        width: 100%;
+        margin: 0;
+        border-bottom: solid 1px #fff;
+    }
+
+    #main-menu>ul>li>a {
+
+        display: block;
+        text-align: center;
+    }
+
+    #main-menu>ul>li>ul {
+        width: 100%;
+    }
+    #main-menu>ul>li>ul>li>a{
+        text-align: center;
+    }
+    #main-menu>ul>li>ul{
+        position: absolute;
+        margin-top: 1px;
+    }
+}
