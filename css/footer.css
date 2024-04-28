@@ -1,0 +1,21 @@
+footer{
+    float: left;
+    width: 100%;
+    background-color: var(--colorSecundari-claro);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: slategrey;
+    font-size: 14px;
+
+}
+footer a{
+    color: antiquewhite;
+
+}
+footer a:hover{
+    color: pink;
+}
+footer div{
+    margin-bottom: 10px;
+}

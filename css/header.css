@@ -1,0 +1,39 @@
+/* header.css */
+
+header {
+    float: left;
+    width: 100%;
+    font-family: TilNeon-Regular;
+    text-align: center; /* Alineación centrada */
+    margin: 20px 0;
+    background-color: floralwhite;
+    padding-left: 10px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+header img {
+    width: 140px;
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 45px;
+    color: var(--colorPrimari-oscuro);
+    text-shadow: 3px 4px 6px var(--colorSecundari-claro);
+}
+
+.color2 {
+    color: var(--colornegro-oscuro);
+}
+
+@media screen and (max-width:800px) {
+    header {
+        text-align: center;
+    }
+}

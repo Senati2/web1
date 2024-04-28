@@ -1,0 +1,45 @@
+@import url(fonts.css);
+@import url(colores.css);
+@import url(header.css);
+@import url(menuprincipal.css);
+@import url(contenido.css);
+@import url(aside.css);
+@import url(footer.css);
+@import url(video.css);
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: TilNeon-Regular;
+    background-image: url(/img/textura.jpg);
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Estilos CSS para centrar imágenes */
+section img {
+    display: block; /* Convertir la imagen en un elemento de bloque */
+    margin: 0 auto; /* Establecer márgenes automáticos para centrar horizontalmente */
+}
+.aside-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* Estilos para el menú principal */
+#menu-principal {
+    background-color: rgb(62, 119, 224);
+    /* Otros estilos para el menú principal */
+}
+
+/* Estilos para el contenedor de vídeo */
+.video-container {
+    background-color: #e9e9e9;
+    /* Otros estilos para el contenedor de vídeo */
+}

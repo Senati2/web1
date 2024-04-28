@@ -1,0 +1,78 @@
+/* Estilos para el contenedor de vídeo */
+.video-container {
+    border: 45px solid #ebc6c6; /* Ajuste de la sintaxis */
+    padding: 220px; /* Ajuste de la sintaxis y se añadió la unidad de medida */
+    border-radius: 25px; /* Redondea las esquinas */
+    overflow: visible; /* Oculta cualquier contenido fuera del contenedor */
+    background-color: aliceblue; /* Color de fondo específico para el contenedor de vídeo */
+    top: auto;
+}
+
+/* Estilos para el contenido */
+#contenido {
+    float: left;
+    margin-top: 30px;
+    margin-left: 1px;
+    padding: 10px; /* Se añadió la unidad de medida */
+    width: calc(100% - 30px); /* Ajuste del ancho */
+}
+
+#contenido h1 {
+    margin: 10px auto; /* Centrar el título horizontalmente */
+    text-transform: uppercase;
+    font-size: 40px;
+    text-shadow: 3px 3px 4px #9e6161;
+    background-color: bisque;
+    text-align: center; /* Centrar el texto */
+}
+
+#contenido section {
+    background-color: rgb(236, 232, 191);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 3px 4px 5px #ddd;
+}
+
+#contenido section h2 {
+    margin: 0 auto; /* Centrar el título horizontalmente */
+    color: var(--colorPrimari-claro);
+    font-weight: bold;
+    text-align: center; /* Centrar el texto */
+}
+
+#contenido>section>a {
+    display: block;
+    margin: 0 auto 20px; /* Centrar el enlace horizontalmente */
+    color: var(--colorSecundari-claro);
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilos para el paginado */
+.paginado {
+    float: right;
+}
+
+.paginado>li {
+    display: inline-block;
+}
+
+.paginado>li>a {
+    padding: 5px;
+    background-color: cyan;
+    color: white;
+    border-radius: 5px;
+}
+
+.paginado>li>a:hover {
+    color: gold;
+    background-color: green;
+}
+
+@media screen and (max-width:800px) {
+    #contenido {
+        width: 100%;
+    }
+}
+#contenido>section:nth-child(1) {
+    margin-top: 30px; /* Agrega un margen superior para separar la sección del aside */}

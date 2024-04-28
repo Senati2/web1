@@ -1,0 +1,64 @@
+/* Estilos para el aside */
+aside {
+    background-color: cornflowerblue;
+    max-width: 300px; /* Define la anchura máxima del aside */
+    margin: 10px auto; /* Centra el aside horizontalmente y agrega espacio en la parte superior */
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px var(--colorPrimari-claro);
+}
+
+/* Estilos adicionales para el aside */
+aside h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--colorPrimari-oscuro);
+    background-color: var(--colorPrimari-claro);
+    margin-top: 0;
+}
+
+aside article {
+    margin-bottom: 60px;
+}
+
+aside article form input[type="submit"] {
+    background-color: bisque;
+    width: 100%;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+aside article form input[type="email"],
+aside article form input[type="password"] {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+aside article form input[type="submit"]:hover {
+    background-color: var(--colorPrimari-claro);
+    cursor: pointer;
+}
+
+aside ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+aside ul li a {
+    color: var(--colorPrimari-claro);
+}
+
+aside ul li a:hover {
+    color: cadetblue;
+}
+
+aside blockquote {
+    margin: 0;
+    color: cornflowerblue;
+    font-weight: bold;
+}

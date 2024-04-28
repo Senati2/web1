@@ -1,0 +1,9 @@
+/* colores.css */
+
+:root {
+    --colorPrimari-oscuro: rgb(239, 184, 16);
+    --colorPrimari-claro: #211853;
+    --colorSecundari-oscuro: #a6c9e4;
+    --colorSecundari-claro: #4286ec;
+    --colornegro-oscuro: #000000;
+}

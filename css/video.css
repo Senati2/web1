@@ -1,0 +1,6 @@
+/* Estilos para el contenedor de vídeo */
+.video-container {
+    border: 5px solid #8B4513; /* Borde sólido con color marrón */
+    border-radius: 15px; /* Borde redondeado */
+    background-color: #F5DEB3; /* Fondo de color wheat */
+}
